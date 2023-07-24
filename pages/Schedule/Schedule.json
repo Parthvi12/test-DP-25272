@@ -1,26 +1,26 @@
 {
   "unpublishedPage": {
-    "name": "Assets",
-    "slug": "assets",
+    "name": "Schedule",
+    "slug": "schedule",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1280,
+          "rightColumn": 1160,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1390,
+          "bottomRow": 580,
           "containerStyle": "none",
-          "snapRows": 125,
+          "snapRows": 66,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 80,
-          "minHeight": 970,
+          "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0
@@ -28,28 +28,18 @@
         "layoutOnLoadActions": [
           [
             {
-              "name": "FilterType",
+              "id": "Schedule_select_cars",
+              "name": "select_cars",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "name": "getAssets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "(assetList.pageNo - 1) * assetList.pageSize"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Assets",
+        "id": "Schedule",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -60,5 +50,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "64be774dfb2deb72ef7a9441_64be7766fb2deb72ef7a947a"
+  "gitSyncId": "64be77f1fb2deb72ef7a94cb_64be7968fb2deb72ef7a958d"
 }

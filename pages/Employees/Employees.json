@@ -28,7 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Employees_employee_assignments",
               "name": "employee_assignments",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -39,7 +38,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Employees_getAssets",
               "name": "getAssets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -49,7 +47,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Employees_getEmployees",
               "name": "getEmployees",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
