@@ -1,26 +1,26 @@
 {
   "unpublishedPage": {
-    "name": "Search",
-    "slug": "search",
+    "name": "Assets",
+    "slug": "assets",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1160,
+          "rightColumn": 1280,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1090,
+          "bottomRow": 1470,
           "containerStyle": "none",
-          "snapRows": 73,
+          "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 80,
-          "minHeight": 740,
+          "version": 71,
+          "minHeight": 970,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0
@@ -28,20 +28,22 @@
         "layoutOnLoadActions": [
           [
             {
-              "name": "getAllCustomers",
+              "id": "Assets_FilterType",
+              "name": "FilterType",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [
-                "(customers_table.pageNo - 1) * customers_table.pageSize"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
-              "name": "getAllOrders",
+              "id": "Assets_getAssets",
+              "name": "getAssets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "(orders_table.pageNo - 1) * orders_table.pageSize"
+                "(assetList.pageNo - 1) * assetList.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -49,7 +51,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Search",
+        "id": "Assets",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -60,5 +62,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "64bdf6577ae99379e7600783_64be73fffb2deb72ef7a93cf"
+  "gitSyncId": "64be774dfb2deb72ef7a9441_64be7766fb2deb72ef7a947a"
 }

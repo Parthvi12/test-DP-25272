@@ -1,26 +1,26 @@
 {
   "unpublishedPage": {
-    "name": "Dashboard",
-    "slug": "dashboard",
+    "name": "Dashboard2",
+    "slug": "dashboard2",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1160,
+          "rightColumn": 1280,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2460,
+          "bottomRow": 1270,
           "containerStyle": "none",
-          "snapRows": 73,
+          "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 64,
-          "minHeight": 740,
+          "version": 80,
+          "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0
@@ -28,101 +28,72 @@
         "layoutOnLoadActions": [
           [
             {
-              "name": "delayedOrders",
+              "id": "Dashboard2_assetByType",
+              "name": "assetByType",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "name": "monthlyDeliveryDates",
+              "id": "Dashboard2_assetsByMakeDefault",
+              "name": "assetsByMakeDefault",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "name": "monthlyExpectedDeliveryDates",
+              "id": "Dashboard2_assetsbyDepartment",
+              "name": "assetsbyDepartment",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard2_assignedAssets",
+              "name": "assignedAssets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "name": "orderValuePerMonth",
+              "id": "Dashboard2_checkedOutAssets",
+              "name": "checkedOutAssets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "name": "ordersPerMonth",
+              "id": "Dashboard2_totalAssets",
+              "name": "totalAssets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
-              "name": "paymentMethod",
+              "id": "Dashboard2_assetsByMake",
+              "name": "assetsByMake",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "popularProducts",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "refundMethod",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "refundValuePerMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "refundedOrders",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "refundsPerMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "totalCustomers",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "name": "totalOrders",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.type.x"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Dashboard",
+        "id": "Dashboard2",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -133,5 +104,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "64bdf6577ae99379e7600783_64be73fffb2deb72ef7a93cd"
+  "gitSyncId": "64be774dfb2deb72ef7a9441_64be7766fb2deb72ef7a947b"
 }

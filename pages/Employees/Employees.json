@@ -1,26 +1,26 @@
 {
   "unpublishedPage": {
-    "name": "Search",
-    "slug": "search",
+    "name": "Employees",
+    "slug": "employees",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1160,
+          "rightColumn": 1176,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1090,
+          "bottomRow": 1030,
           "containerStyle": "none",
-          "snapRows": 73,
+          "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 80,
-          "minHeight": 740,
+          "version": 71,
+          "minHeight": 970,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0
@@ -28,20 +28,33 @@
         "layoutOnLoadActions": [
           [
             {
-              "name": "getAllCustomers",
+              "id": "Employees_employee_assignments",
+              "name": "employee_assignments",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "(customers_table.pageNo - 1) * customers_table.pageSize"
+                "employeeList.selectedItem.first_name",
+                "(assetsAssigned.pageNo - 1) * assetsAssigned.pageSize"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "name": "getAllOrders",
+              "id": "Employees_getAssets",
+              "name": "getAssets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "(orders_table.pageNo - 1) * orders_table.pageSize"
+                "(Table2.pageNo - 1) * Table2.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Employees_getEmployees",
+              "name": "getEmployees",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "(employeeList.pageNo - 1) * employeeList.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -49,7 +62,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Search",
+        "id": "Employees",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -60,5 +73,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "64bdf6577ae99379e7600783_64be73fffb2deb72ef7a93cf"
+  "gitSyncId": "64be774dfb2deb72ef7a9441_64be7766fb2deb72ef7a947c"
 }
