@@ -18,6 +18,7 @@
     "image": "{{currentItem.image}}",
     "rightColumn": 23,
     "objectFit": "cover",
+    "dynamicHeight": "FIXED",
     "widgetId": "rs070rysz3",
     "logBlackList": {
         "widgetName": true,
