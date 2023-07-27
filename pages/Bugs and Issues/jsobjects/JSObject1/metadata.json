@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Bugs and Issues",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Bugs and Issues_JSObject1",
+  "deleted": false,
+  "gitSyncId": "64c1d338f9368f6bcbd5c57f_64c1d353f9368f6bcbd5c5fe"
+}

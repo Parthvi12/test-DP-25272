@@ -1,0 +1,1 @@
+{"pageSize":"100","command":"UPDATE_RECORDS","baseId":"{{appsmith.store.baseId}}","tableName":"{{appsmith.store.tableName}}","records":"[\n    {\n      \"id\": {{List2.selectedItem.id}},\n      \"fields\": {   \n        \"Priority\": {{Select1.selectedOptionValue}},\n        \"Status\":{{Select1Copy.selectedOptionValue}}\n      }\n    }\n  ]\n}\n\n"}

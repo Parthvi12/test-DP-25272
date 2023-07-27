@@ -1,0 +1,67 @@
+{
+  "unpublishedPage": {
+    "name": "Bugs and Issues",
+    "slug": "bugs-and-issues",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1010,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 81,
+          "minHeight": 1100,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Bugs and Issues_getBase1",
+              "name": "getBase1",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Bugs and Issues_JSObject1.storeInfo",
+              "name": "JSObject1.storeInfo",
+              "collectionId": "Bugs and Issues_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith?.store?.baseId?.length == 0 && appsmith?.store?.tableName?.length == 0) {\n    return getBase1.data.records.map(record => {\n      let row = record.fields;\n      row['id'] = record.id;\n      return row;\n    });\n  } else {\n    await storeValue('baseId', in_baseId.text);\n    await storeValue('tableName', in_tableName.text);\n    showAlert('Airtable details have been set!');\n    await getBase.run();\n    closeModal('Modal1');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Bugs and Issues",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64c1d338f9368f6bcbd5c57f_64c1d353f9368f6bcbd5c5e4"
+}

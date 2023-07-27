@@ -28,7 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Schedule_select_cars",
               "name": "select_cars",
               "confirmBeforeExecute": false,
               "pluginType": "DB",

@@ -1,0 +1,1 @@
+{"pageSize":"10","command":"LIST_RECORDS","baseId":"{{appsmith.store.baseId}}","tableName":"{{appsmith.store.tableName}}","maxRecords":""}
